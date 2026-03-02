@@ -18,4 +18,42 @@ main {
 main > h1 {
   text-align: center;
   font-size: 3.5em;
+  margin-bottom: 1rem;
+}
+
+/* colored letters */
+.greeting .letter {
+  display: inline-block;
+  transition: transform 0.3s;
+}
+.greeting .letter:hover {
+  transform: scale(1.2);
+}
+.red { color: #e74c3c; }
+.orange { color: #e67e22; }
+.yellow { color: #f1c40f; }
+.green { color: #2ecc71; }
+.blue { color: #3498db; }
+.indigo { color: #9b59b6; }
+.violet { color: #8e44ad; }
+
+#dummyBtn {
+  display: block;
+  margin: 0 auto;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.2rem;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  transition: background-color 0.3s, transform 0.2s;
+}
+#dummyBtn:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+}
+#dummyBtn:active {
+  transform: translateY(0);
 }
